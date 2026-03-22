@@ -1,28 +1,35 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, BarChart3, Database, FileSpreadsheet } from 'lucide-react'
+import { ArrowRight, Play, Zap } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-primary-50 to-white">
+    <section className="pt-32 pb-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="max-w-4xl mx-auto text-center"
+        >
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 bg-zentrax-light px-4 py-2 rounded-full mb-8"
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              El sistema POS que tu
-              <span className="text-primary-600"> restaurante </span>
-              necesita
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Inventário con importación Excel/CSV, CMV automático y predicciones de ventas.
-              5-15% más económico que FUDO.
-            </p>
+            <Zap className="w-4 h-4 text-zentrax-accent" />
+            <span className="text-sm font-medium text-zentrax-dark">Sistema de gestión para restaurantes</span>
           </motion.div>
+
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ color: '#0F172A', lineHeight: 1.1 }}>
+            Control total para<br />tu restaurante
+          </h1>
+
+          <p className="text-xl md:text-2xl mb-10" style={{ color: '#475569' }}>
+            Ventas, tickets e inventario en tiempo real desde un solo sistema
+          </p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -30,58 +37,16 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <a
-              href="#contact"
-              className="bg-primary-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-700 transition-colors flex items-center gap-2"
-            >
-              Prueba gratuita 14 días
+            <button className="bg-zentrax-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-zentrax-primary/90 transition-all duration-200 flex items-center gap-2 shadow-lg shadow-blue-500/20">
+              Probar demo
               <ArrowRight size={20} />
-            </a>
-            <a
-              href="#features"
-              className="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-50 transition-colors"
-            >
-              Ver funcionalidades
-            </a>
+            </button>
+            <button className="border-2 border-zentrax-primary text-zentrax-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-zentrax-light transition-all duration-200 flex items-center gap-2">
+              <Play size={20} className="w-5 h-5" />
+              Solicitar acceso
+            </button>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
-          >
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              <div className="flex justify-center mb-4">
-                <FileSpreadsheet className="w-12 h-12 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Importación Excel/CSV</h3>
-              <p className="text-gray-600">
-                Importa tu inventario desde archivos Excel o CSV en segundos. No pierdas tiempo digitando.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              <div className="flex justify-center mb-4">
-                <BarChart3 className="w-12 h-12 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">CMV Automático</h3>
-              <p className="text-gray-600">
-                Calcula el Costo de Materiales Vendidos automáticamente. Identifica where pierdes dinero.
-              </p>
-            </div>
-
-            <div className="p-6 bg-white rounded-xl shadow-md">
-              <div className="flex justify-center mb-4">
-                <Database className="w-12 h-12 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Predicciones Inteligentes</h3>
-              <p className="text-gray-600">
-                Predicciones manuales o históricas. Sabe qué comprar antes de que falte.
-              </p>
-            </div>
-          </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

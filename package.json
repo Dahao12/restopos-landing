@@ -1,7 +1,7 @@
 {
-  "name": "restopos-landing",
+  "name": "zentrax-landing",
   "version": "1.0.0",
-  "description": "Landing page de Restopos - Sistema POS inteligente",
+  "description": "Landing page de Zentrax - Sistema de gestión para restaurantes",
   "private": true,
   "scripts": {
     "dev": "next dev",

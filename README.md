@@ -1,6 +1,6 @@
-# Restopos - Landing Page
+# Zentrax - Landing Page
 
-Landing page para Restopos, sistema POS inteligente para restaurantes.
+Landing page para Zentrax, sistema de gestión para restaurantes.
 
 ## Stack
 
@@ -8,7 +8,6 @@ Landing page para Restopos, sistema POS inteligente para restaurantes.
 - React 18
 - Tailwind CSS
 - TypeScript
-- Supabase (captura de leads)
 - Framer Motion (animaciones)
 - Lucide React (iconos)
 
@@ -20,12 +19,7 @@ npm install
 
 ## Configuración
 
-1. Copia `.env.example` a `.env`:
-```bash
-cp .env.example .env
-```
-
-2. Configura las variables de entorno con tus credenciales de Supabase
+Copia `.env.example` a `.env` si es necesario para configuración futura.
 
 ## Desarrollo
 
@@ -50,20 +44,6 @@ Este proyecto está configurado para deploy automático en Vercel.
 2. Configura las variables de entorno
 3. Deploy automático en cada push
 
-## Funcionalidades
-
-- ✅ Hero section con CTA
-- ✅ Features con diferenciadores
-- ✅ Tabla de comparación vs competidores
-- ✅ Pricing (3 planes)
-- ✅ Testimonials
-- ✅ Formulario de captura de leads
-- ✅ Navbar responsive
-- ✅ Footer
-- ✅ Animaciones suaves
-- ✅ SEO optimizado
-- ✅ Mobile-first
-
 ## Estructura
 
 ```
@@ -75,24 +55,25 @@ Este proyecto está configurado para deploy automático en Vercel.
 │   ├── Navbar.tsx
 │   ├── Hero.tsx
 │   ├── Features.tsx
-│   ├── Pricing.tsx
-│   ├── Testimonials.tsx
-│   ├── Contact.tsx
 │   └── Footer.tsx
-├── lib/
-│   └── supabase.ts       # Cliente Supabase
 └── package.json
 ```
 
-## Leads Capturados
+## Identidad Visual
 
-Los leads se guardan en la tabla `restopos_leads` de Supabase con los campos:
-- name
-- restaurant
-- email
-- phone
-- created_at
+**Colores:**
+- Azul oscuro (base): #0F172A
+- Azul principal: #2563EB
+- Cian/acento: #22D3EE
+- Blanco: #FFFFFF
+- Gris claro: #F1F5F9
+
+**Enfoque:**
+- Sistema SaaS moderno
+- Diseño minimalista
+- Sin comparaciones con competidores
+- Enfoque en conversión
 
 ## Contacto
 
-Email: info@restopos.com
+Email: info@zentrax.com
