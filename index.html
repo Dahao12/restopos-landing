@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zentrax - Gestión Gastronómica</title>
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset básico */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #0D1B41; line-height:1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Contenedores */
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 2rem 0; }
+
+    /* Hero */
+    .hero { display:flex; flex-direction: column; align-items: center; justify-content:center; text-align:center; padding:5rem 1rem; background:#F4F5F9; position:relative; overflow:hidden; }
+    .hero h1 { font-family:'Poppins', sans-serif; font-size:3rem; margin-bottom:1rem; }
+    .hero p { font-size:1.2rem; margin-bottom:2rem; }
+    .hero button { background:#1AB56A; color:white; font-weight:600; padding:1rem 2rem; border:none; border-radius:8px; cursor:pointer; transition: transform 0.3s, background 0.3s; }
+    .hero button:hover { transform: scale(1.05); background:#17A55F; }
+
+    /* Secciones */
+    section { padding:4rem 0; }
+    h2 { font-family:'Poppins', sans-serif; font-size:2rem; margin-bottom:2rem; text-align:center; }
+
+    /* Cómo funciona */
+    .steps { display:flex; flex-wrap:wrap; justify-content:space-around; gap:2rem; }
+    .step { flex:1 1 200px; background:#F4F5F9; padding:2rem; border-radius:12px; text-align:center; transition: transform 0.3s; }
+    .step:hover { transform: translateY(-10px); }
+
+    /* Beneficios */
+    .benefits { display:flex; flex-wrap:wrap; gap:2rem; justify-content:center; }
+    .benefit { background:#FFFFFF; border:1px solid #E0E0E0; border-radius:12px; padding:2rem; width:220px; text-align:center; transition: transform 0.3s, box-shadow 0.3s; }
+    .benefit:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+    /* Testimonios */
+    .testimonials { display:flex; overflow-x:auto; gap:2rem; padding:1rem 0; }
+    .testimonial { min-width:250px; background:#F4F5F9; padding:2rem; border-radius:12px; flex-shrink:0; }
+
+    /* Integraciones */
+    .partners { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; align-items:center; }
+    .partner img { width:100px; transition: transform 0.3s; }
+    .partner img:hover { transform: scale(1.1); }
+
+    /* Formulario */
+    .demo-form { display:flex; flex-direction:column; gap:1rem; max-width:400px; margin:0 auto; }
+    .demo-form input, .demo-form button { padding:1rem; border-radius:8px; border:1px solid #E0E0E0; width:100%; font-size:1rem; }
+    .demo-form button { background:#1AB56A; color:white; border:none; font-weight:600; cursor:pointer; transition: transform 0.3s, background 0.3s; }
+    .demo-form button:hover { transform: scale(1.05); background:#17A55F; }
+
+    /* Footer */
+    footer { background:#0D1B41; color:white; padding:2rem 1rem; text-align:center; }
+    footer a { color:#1AB56A; }
+
+    /* Responsive */
+    @media(max-width:768px){ .steps, .benefits { flex-direction:column; align-items:center; } }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Zentrax - Gestión Gastronómica que Transforma tu Negocio</h1>
+    <p>Controlá tu salón, delivery, stock y ventas en tiempo real — sin complicaciones</p>
+    <button>Solicitar Demo Gratis</button>
+    <!-- Aquí tu IA puede insertar animación o video interactivo -->
+  </section>
+
+  <!-- Cómo funciona -->
+  <section>
+    <h2>Cómo Funciona</h2>
+    <div class="container steps">
+      <div class="step">
+        <h3>Paso 1</h3>
+        <p>Configurá tu salón en segundos</p>
+      </div>
+      <div class="step">
+        <h3>Paso 2</h3>
+        <p>Toma de pedidos desde móviles y POS</p>
+      </div>
+      <div class="step">
+        <h3>Paso 3</h3>
+        <p>Integrá delivery y menus QR</p>
+      </div>
+      <div class="step">
+        <h3>Paso 4</h3>
+        <p>Visualizá métricas en tiempo real</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section>
+    <h2>Beneficios</h2>
+    <div class="container benefits">
+      <div class="benefit">Gestión integral del negocio</div>
+      <div class="benefit">Reportes y métricas en tiempo real</div>
+      <div class="benefit">Integraciones con plataformas de delivery</div>
+      <div class="benefit">Menú QR y toma de pedidos móvil</div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section>
+    <h2>Testimonios</h2>
+    <div class="container testimonials">
+      <div class="testimonial">
+        <p>"Desde que usamos Zentrax, la organización del turno cambió por completo."</p>
+        <strong>- Dueño de Restaurante</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Los informes me ayudan a anticipar compras y optimizar mi stock."</p>
+        <strong>- Gerente General</strong>
+      </div>
+      <div class="testimonial">
+        <p>"La integración con delivery es inmediata y eficiente."</p>
+        <strong>- Restaurante Café Central</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section>
+    <h2>Integraciones y Partners</h2>
+    <div class="container partners">
+      <div class="partner"><img src="https://via.placeholder.com/100x50?text=PedidosYa" alt="PedidosYa"></div>
+      <div class="partner"><img src="https://via.placeholder.com/100x50?text=Rappi" alt="Rappi"></div>
+      <div class="partner"><img src="https://via.placeholder.com/100x50?text=MercadoPago" alt="MercadoPago"></div>
+    </div>
+  </section>
+
+  <!-- Formulario de demo -->
+  <section>
+    <h2>Solicitá tu Demo</h2>
+    <div class="container">
+      <form class="demo-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="WhatsApp" required>
+        <button type="submit">Agendar Demo</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Zentrax. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+  </footer>
+
+  <!-- JS para microinteracciones -->
+  <script>
+    // Animaciones simples de scroll fade-in
+    const faders = document.querySelectorAll('.step, .benefit, .testimonial');
+    const appearOptions = { threshold:0.2, rootMargin:"0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.classList.add('fade-in');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+
+    // Agregar clase fade-in en CSS
+    const style = document.createElement('style');
+    style.innerHTML = `.fade-in{ opacity:1; transform:translateY(0); transition: all 0.8s ease-out; } .step, .benefit, .testimonial{ opacity:0; transform:translateY(20px); }`;
+    document.head.appendChild(style);
+  </script>
+
+</body>
+</html>
